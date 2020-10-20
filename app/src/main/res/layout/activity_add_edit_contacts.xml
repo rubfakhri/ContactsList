@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEditContacts">
+<com.blogspot.atifsoftwares.circularimageview.CircularImageView
+  android:id="@+id/profileIv"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="15dp"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:src="@drawable/ic_profilepic"
+    app:c_border="true"
+    app:c_border_width="1dp"
+    app:c_border_color="@color/colorGray1" />
+    
+    <EditText
+        android:id="@+id/nameEt"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/profileIv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName|textCapWords"
+        android:hint="Name"
+        android:background="@drawable/shape_re"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/phoneEt"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/nameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Phone"
+        android:background="@drawable/shape_re"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/emailEt"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/phoneEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:background="@drawable/shape_re"
+        android:padding="10dp"/>
+
+    <!--whatsapp-->
+
+    <!--caregiver/child-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveBtn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_done"/>
+</RelativeLayout>
